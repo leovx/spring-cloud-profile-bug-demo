@@ -1,0 +1,5 @@
+org.springframework.context.ApplicationListener=\
+com.jinghao.demo.listener.ActiveProfileLogListener
+
+org.springframework.cloud.bootstrap.BootstrapConfiguration=\
+com.jinghao.demo.autoconfigure.BootstrapAutoConfiguration

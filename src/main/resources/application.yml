@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: spring-cloud-profile-bug-demo
+  profiles:
+    active: local # this config was intended for out-of-box experience when doing local dev test right after clone
