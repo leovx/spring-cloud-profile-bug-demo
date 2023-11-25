@@ -23,3 +23,5 @@ Instead of accepting "*prod*" and "*secure*" profiles only, it accepts *local* p
 
 ## Potential Hazard
 In this demostration project, 2 beans of AuthManager would be candidates to use - LocalBypassAuthManager should only be used in local development environment due to some reasons (say something cannot be installed locally but should not impact your BAU functional implementation), while NormalAuthManager should be applied in any valid remote environment - especially Production. In this case, both "prod" and "local" profiles are activated and hence the illegal bean of LocalBypassAuthManager will be used in Production making any authentication tokens bypass and become valid.
+
+[Issue #1285](https://github.com/spring-cloud/spring-cloud-commons/issues/1285) has been raised and fixed by [PR #1286](https://github.com/spring-cloud/spring-cloud-commons/pull/1286)
